@@ -88,10 +88,10 @@ class RepositoryFormFragment : Fragment() {
             val mainActivity = activity as? MainActivity
             if (repoToEdit == null) {
                 mainActivity?.addRepository(name, description, finalLanguage)
-                Toast.makeText(requireContext(), "Proyecto Creado", Toast.LENGTH_SHORT).show()
+                Toast.makeText(requireContext(), "Proyecto Creado Correctamente", Toast.LENGTH_SHORT).show()
             } else {
                 mainActivity?.updateRepository(repoToEdit!!.id, description, finalLanguage)
-                Toast.makeText(requireContext(), "Proyecto Actualizado", Toast.LENGTH_SHORT).show()
+                Toast.makeText(requireContext(), "Proyecto Actualizado Correctamente", Toast.LENGTH_SHORT).show()
             }
             
             parentFragmentManager.popBackStack()
