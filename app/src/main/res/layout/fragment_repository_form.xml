@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:navigationIcon="@android:drawable/ic_menu_revert"
+        app:navigationIconTint="@android:color/white"
+        app:title="Nuevo Repositorio"
+        app:titleTextColor="@android:color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre del repositorio"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etRepoName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Lenguaje / Código"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etRepoLanguage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ej: Kotlin, Java, XML" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Descripción"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etRepoDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Descripción" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Guardar" />
+
+    </LinearLayout>
+
+</LinearLayout>
